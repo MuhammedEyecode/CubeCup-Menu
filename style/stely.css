@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Faustina:ital,wght@0,300..800;1,300..800&family=Great+Vibes&family=PT+Sans+Caption:wght@400;700&display=swap');
+body{
+    font-family: "Great Vibes", cursive;
+    margin: 0;
+    background-color: rgb(115, 116, 115);
+
+ 
+}
+
+
+.close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+.mobile_menu-mode{
+    transition: all .3s ease;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.793);
+    position: fixed;
+  top: 0;
+  display: none;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   backdrop-filter: blur(10px);
+  left: 0;
+  z-index: 1001;
+} 
+footer li{
+    list-style-type: none;
+}
+
+header{
+    background-color: #e7ae4b;
+    width: 100vw;
+    height: 200px;
+    display: flex;
+     justify-content: space-around;
+     align-items: center;
+     font-size:3rem;
+     animation: slideDown 0.5s 1;
+}
+
+header h1{
+    width: 33vw;
+    margin: 0;
+}
+
+nav{
+     display: flex;
+     font-size: 20px;
+     width: 33vw;
+     justify-content: space-around;
+   
+}
+
+a{
+    text-decoration: none;
+    color:darkolivegreen;
+}
+
+a:hover{
+    cursor: pointer;
+    color: brown;
+}
+
+html{
+     scroll-behavior: smooth;
+     
+}
+
+
+main{
+    background: url(../img/logo.png) ;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+}
+
+
+.logo img{
+    width: 200px;
+}
+
+.logo{
+    width: 14vw;
+}
+
+.coffee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 20px;
+   width: 100vw;
+  animation: fadeIn 0.5s 1;
+   font-family: "Caveat", cursive;
+color: rgb(13, 7, 22);
+font-size: 30px;
+
+}
+
+.card-1_buy{
+    width: 150px;
+    height: 50px;
+    border: 1px solid brown;
+    border-top: 4px solid brown;
+    border-right: 4px solid brown;
+    background-color: white;
+    color: black;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: all .2s ease;
+    font-family: "Faustina", serif;
+    font-size: 1.5rem;
+}
+
+.card-1_buy:hover{
+    background-color: brown;
+    color: white;
+    transform: translateY(-5px);
+  cursor: pointer;
+    box-shadow: 0px 0px 10px white;
+}
+
+.coffee_title,.food-title,.drinks-title,.alco-title , .breakfast-title{
+    font-size: 5rem;
+    filter: drop-shadow(0px 0px 10px white);
+display: flex;
+padding: 30px;
+border-radius: 15px;
+flex-direction: column;
+align-items : center;
+background-color: rgba(210, 105, 30, 0.767);
+width: 50vw;
+}
+
+
+
+.cost  { 
+   padding: 20px;
+   background-color: rgba(255, 255, 255, 0.507);
+   border-radius: 15px;
+    color: crimson;
+    font-size: 2rem;
+    font-weight: bold;
+  text-align: center;
+   width: 30%;
+   height: 100px;
+
+}
+
+
+
+
+.breakfast-image{
+   width:350px;
+    border-radius: 8px;
+
+
+
+}
+
+
+
+
+.breakfast{
+    width: 100vw;
+    font-family: "Caveat", cursive;
+   gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;    
+    padding: 20px;
+   
+}
+
+
+.breakfast-section{
+    width: 80vw;
+    height: 100%;
+    background-color: rgba(29, 104, 45, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.cold-drinks{
+    width: 80vw;
+    height: 100%;
+    background-color: rgba(106, 149, 167, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px rgb(255, 174, 0);
+     display: flex;
+     flex-direction: column;
+   align-items: center;
+   overflow: hidden;
+}
+
+.drink-section{
+    font-family: "Caveat", cursive;
+    background-color: #16113175;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;    
+    padding: 20px;
+   width: 100%;
+}
+
+
+.drink-image {
+    width: 250px;
+}
+
+
+
+
+
+.food{
+    margin-top: 100px;
+    width: 80vw;
+    height: 100%;
+    background-color: rgba(106, 149, 167, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px rgb(3, 54, 43);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fast-food{
+    font-family: "Caveat", cursive;
+    background-color: #99702575;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;    
+    padding: 20px;
+   
+}
+
+
+.alco{
+    overflow: hidden;
+    width: 80vw;
+     height: 100%;
+     margin-top: 20px;
+      background-color: rgba(106, 149, 167, 0.5);
+      border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px rgb(3, 54, 43);
+}
+
+.drink{
+    font-family: "Caveat", cursive;
+    background-color: #681c1c75;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;    
+    padding: 20px;
+  
+}
+
+
+.fast-food-image{
+  width: 350px;
+}
+
+/*Coffee cards*/
+.card{
+    width: 76vw;
+    padding:2vw;
+    height: 100%;
+    background-color: rgba(133, 133, 133, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mobile_menu{
+    display: none;
+}
+
+footer{
+     background:linear-gradient(120deg,black,rgb(39, 39, 39),whitesmoke);
+     font-size: 30px;
+     margin-top:50px ;
+     width: 100%;
+     
+     height: 100%;
+}
+
+.footer-bottom{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.footer-1 h2{
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(120deg,orange,purple,violet);
+}
+
+
+.footer-1 p{
+    width: 100%;
+}
+
+.footer-1{
+    color: white;
+}
+
+.footer-logo img{
+
+  width: 350px;
+   
+}
+.footer-logo{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_copyright{
+    width: 100vw;
+    padding: 10px 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    font-size: 0.8rem;
+}
+
+@keyframes slideDown{
+  0%{transform: translateY(-100px);opacity: 0;}
+  100%{transform: translateY(0px);opacity: 1;}
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+
+
+@media screen and (max-width: 768px) {
+    header{
+        justify-content: space-between;
+        align-items: center;
+        height: 15vh;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+    .mobile_menu{
+         display:block;
+    }
+
+    nav{
+        display: none;
+    }
+    header h1{
+        font-size: 20px;
+    }
+
+
+    main{
+        font-size: 20px;
+    }
+}
+
+/*Iphone 14 pro max*/
+@media screen and (max-width:620px){
+    header{
+     width: 100vw;
+       
+    }
+
+   main{
+    overflow-x: hidden  ;
+   }
+    .footer-1 ul img{
+        width: 30px;
+    }
+    .footer-1 ul {
+        font-size: 10px;
+        
+    }
+    
+  
+.h1{
+width: 100px;
+    font-size: 30px;
+}
+  nav{
+    width: 100px;
+  }
+
+
+  .fast-food-image img{
+    width: 50px;
+  }
+  
+  .footer-logo img{
+    width: 50%;
+  }
+  
+  footer{
+    width: 100vw;
+  }
+  .footer-1{
+    align-items: center;
+    font-size: 1rem; /* относительно 1rem - 16px 1.5rem - 24px */
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+
+  }
+}
+
+
